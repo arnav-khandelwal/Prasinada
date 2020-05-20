@@ -46,8 +46,15 @@ body {
   background-color: black;
 }
 
-hr {
-  margin: 0px;
+.hr {
+  height: 1px;
+  width: 95%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #424242;
+  float: center;
 }
 
 .caret:hover{border: black;}
@@ -333,7 +340,7 @@ button {
 
 
 #end {
-  background-color: black;
+  background-color: #121212;
   color: white;
 }
 
@@ -346,7 +353,9 @@ button {
 #end table {
   border-spacing: 40px 0px;
   border-collapse: separate;
-  font-family: cal-2;
+  font-family: 'Montserrat', montserrat;
+  font-weight: 100;
+  font-size: 50%;
 }
 
 #end td {
@@ -365,11 +374,17 @@ button {
 #end img {
   width: 50%;
   height: 50%;
+  transition: 0.2s;
   vertical-align: top;
   border: 2px;
   border-color: red;
   padding: 5px;
   border-radius: 50%;
+}
+#end img:hover{
+  width: 60%;
+  height: 60%;
+  transition: 0.2s;
 }
 
 #end p {
@@ -770,7 +785,7 @@ button {
       </table>
     </div>
     <div id="end">
-      <br><br>
+      <br><br><div class="hr"></div>
       <h1>&nbsp;&nbsp;OUR TEAM</h1><br>
       <table>
         <tr width="100%">
