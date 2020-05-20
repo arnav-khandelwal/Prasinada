@@ -13,6 +13,82 @@
   src: url('Montserrat/Montserrat-Light.ttf');
 }
 
+.new-intro{
+  background-image: url("images/1.jpg");
+  position: fixed;
+  height: 100vw;
+  width: 100vw;
+  z-index: 2147483646;
+  left: 0vw;
+}
+
+.prasinada-gradient{
+  position: relative;
+  top: 10vw;
+  left: 10vw;
+  width: 485px;
+  font-size: 82px;
+  font-weight: 900;
+  opacity: 0;
+  animation: intro 2s linear 0s 1;
+  animation-fill-mode: forwards;
+  background: -webkit-linear-gradient(right, rgb(34, 109, 255), rgb(255, 0, 211));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes intro{
+  100%{
+    opacity: 90%;
+    transition: 2s;
+  }
+}
+
+.impossible{
+  position: relative;
+  top: 10vw;
+  left: -200vw;
+  font-size: 22px;
+  font-weight: 800;
+  animation: impossible 1.5s linear 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes impossible{
+  100%{left: 11vw;
+  }
+}
+
+.bottom-right{
+  position: fixed;
+  bottom: 5vw;
+  right: 6vw;
+  border-radius: 50%;
+  opacity: 60%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.bottom-right:hover{
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.bottom-right:active{
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+#new-intro:target{
+  animation: slide 0.5s linear 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide{
+  100%{
+    left: 100vw;
+  }
+}
+
 .centered {
   float: center;
 }
