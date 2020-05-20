@@ -7,82 +7,427 @@
 
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <title>Team AUA - PRASINADA</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title>PRASINADA</title>
-        <script>
-          var i = 0;
-          var text = 'GROUP-29';
-          var speed = 400;
-
-          function aua() {
-            if (i < text.length) {
-             document.getElementById("aua").innerHTML += text.charAt(i);
-              i++;
-              setTimeout(aua, speed);
-            }
-          }
-
-          function bluebg() {
-	          document.style.setProperty("playstate", "running");
-          }
-          
-        </script>
+        <title>TEAM AUA - PRASINADA</title>
       </head>
 
-  <body onload="aua();">
+<style>
+@font-face {
+  font-family: cal;
+  src: url("Pacifico.ttf");
+}
+
+@font-face {
+  font-family: cal-2;
+  src: url("LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url('Montserrat/Montserrat-Light.ttf');
+}
+
+.centered {
+  float: center;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: black;
+}
+
+hr {
+  margin: 0px;
+}
+
+.caret:hover{border: black;}
+
+.h {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  padding: 10px;
+  margin: 3px;
+  transition: 0.8s;
+  font-family: 'Montserrat', montserrat;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.h:active{text-decoration: none;}
+
+.dropdown-internal {
+  position: relative;
+  display: inline-block;
+  font-family: 'Montserrat', montserrat
+}
+
+.internal-working {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index:1;
+  border-radius: 10px;
+}
+
+.internal-working a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.internal-working a:hover {background-color: #f1f1f1}
+
+.dropdown-internal:hover .internal-working {
+  display: block;
+}
+
+.dropdown-internal:hover .intcaret{
+  transform: rotate(180deg); 
+  transition: 0.8s;
+  border-top: 4px solid black;
+}
+
+.dropdown-external:hover .extcaret{
+  transform: rotate(180deg); 
+  transition: 0.8s;
+  border-top: 4px solid black;
+}
+
+.dropdown-internal:hover .h {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.dropdown-external {
+  position: relative;
+  display: inline-block;
+  font-family: 'Montserrat', montserrat
+}
+
+.external-working {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index:1;
+  border-radius: 10px;
+}
+
+.external-working a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.external-working a:hover {background-color: #f1f1f1}
+
+.dropdown-external:hover .external-working {
+  display: block;
+}
+
+.dropdown-external:hover .h {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  transition: 0.8s;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .hide{
+    display: none;
+  }
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  background-image: linear-gradient(to right, blue, skyblue);
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.b {
+  font-size: 2vw;
+  color: white;
+  font-weight: 500;
+  float: left;
+  transition: 0.5s;
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  border-radius: 20px;
+  background: rgb(217, 150, 56);
+  padding: 10px;
+}
+
+.b:hover {
+  text-decoration: none;
+  color: rgb(72, 176, 79);
+  bottom: 2vw;
+  transition: 0.5s;
+}
+
+.icon-bar {
+  background: white;
+  z-index: 2;
+}
+
+button {
+  margin: 5px;
+}
+
+#main {
+  background-image: url("images/1.jpg");
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  color: rgb(255, 255, 255);
+  height: 800px;
+  margin-top: 0px;
+}
+
+#main h1 {
+  font-size: 10vw;
+  font-family: cal-2;
+  font-weight: 700;
+  letter-spacing: 1vw;
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgb(200, 200, 200);
+  opacity: 0.8;
+}
+
+#main h4 {
+  font-size: 2vw;
+  font-family: cal;
+  letter-spacing: 4px;
+  color: rgb(84, 184, 79);
+}
+
+#main2 {
+  background-image: url("images/6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  color: rgb(255, 255, 255);
+  height: 800px;
+  margin-top: 0px;
+}
+
+#main2 h1 {
+  font-size: 10vw;
+  font-family: cal-2;
+  font-weight: 700;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#main3 {
+  background-image: url("images/7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  color: rgb(255, 255, 255);
+  height: 800px;
+  margin-top: 0px;
+}
+
+#main3 h1 {
+  font-size: 10vw;
+  font-family: cal-2;
+  font-weight: 700;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.bgblack table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+  background-color: black;
+  color: white;
+  margin-top: 0px;
+}
+
+.bgblack {
+  margin-top: 0px;
+  background-color: black;
+}
+
+.bgblack td {
+  font-size: 25px;
+  text-align: justify;
+}
+
+.bgblack h1 {
+  font-size: 50px;
+  font-family: cal;
+  word-spacing: 3px;
+  text-align: left;
+}
+
+.bgblack img {
+  width: 100%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+}
+
+
+
+.bgwhite h1 {
+  font-size: 40px;
+  margin-left: 0px;
+  font-family: cal;
+  text-align: left;
+  word-spacing: 2px;
+}
+
+.bgwhite table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+}
+
+.bgwhite td {
+  font-size: 25px;
+  text-align: justify;
+  color: black;
+  font-weight: 500;
+}
+
+.bgwhite img {
+  width: 100%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+}
+
+
+#end {
+  background-color: black;
+  color: white;
+}
+
+#end h1 {
+  font-size: 50px;
+  margin-left: 40px;
+  font-family: cal;
+}
+
+#end table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+}
+
+#end td {
+  font-size: 25px;
+  text-align: center;
+}
+
+#end h1 {
+  font-size: 40px;
+  margin-left: 0px;
+  font-family: cal;
+  text-align: left;
+  word-spacing: 2px;
+}
+
+#end img {
+  width: 50%;
+  height: 50%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#end p {
+  text-align: justify;
+}
+
+.montserrat {
+  font-family: montserrat;
+}
+
+</style>
+
+  <body>
 
     <a class="b" href="https://participativelearning.org/course/view.php?id=17" target="_blank">GRUEN</a>
-    <a class="b2" href="https://participativelearning.org/course/view.php?id=17" target="_blank">OUR YOUTBE VIDEO</a>
 
     <nav class="navbar navbar-fixed-top navbar-expand-lg" id="under-intro">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="prasinada" style="margin-top: 5.5px;">PRASINADA</a>
-          <button type="button" class="navbar-toggle navbar-right top" data-toggle="collapse" data-target="#myNavbar">
+          <a href="#" class="h hide">PRASINADA</a>
+          <button type="button" class="navbar-toggle navbar-right top inline">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="h navbar-brand">PRASINADA</a></li>
+          </ul>
           <ul class="nav navbar-nav navbar-left">
-            <span class="dropdown" style="margin-top: 4px;">
- 			<button class="o m btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="font-size: 30px;">Internal Working of the city<br></button>
-  			<div class="m n z dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 40px; margin-top: 26px; background-color: black;">
-    		<a class="dropdown-item g" href="#s1">Education</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s2">Community behaviour changes</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s3">Governance</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s4">Maintenance of greenery</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s5">Low air pollution level</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s6">Compensatory act for forests</a><br>
-  			</div>
-  			</span>
-  			<span class="dropdown" style="margin-top: 4px;">
- 			<button class="o m btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="font-size: 30px;">External working of the city<br></button>
-  			<div class="m n z dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-top: 26px; background-color: black;margin-left: 40px;">
-    		<a class="dropdown-item g" href="#s7">Water system</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s8">Transportation</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s9">Reducing the temperature of the city</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s10">Energy Generation</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s11">Waste management</a><br>
-    		<div class="dropdown-divider"></div>
-    		<a class="dropdown-item g" href="#s12">Cleaner methods of operation industries</a><br>
-   			</div>
-   			</span>
+            <li>
+              <div class="dropdown-internal">
+              <a href="#internal-working" class="h">Internal Working<span class="caret intcaret"></span></a>
+              <div class="internal-working">
+                <a href="#">Education</a>
+                <a href="#">Community Behaviour Changes</a>
+                <a href="#">Governance</a>
+                <a href="#">Maintenance of Greenery</a>
+                <a href="#">Low Air Pollution Levels</a>
+                <a href="#">Compensatory Act for Forests</a>
+              </div>
+            </div>
+            </li>
+            <li>
+              <div class="dropdown-external">
+              <a href="#external-working" class="h">External Working<span class="caret extcaret"></span></a>
+              <div class="external-working">
+                <a href="#">Water System</a>
+                <a href="#">Transportation</a>
+                <a href="#">Reducing the Temperature of the City</a>
+                <a href="#">Energy Generation</a>
+                <a href="#">Waste management</a>
+                <a href="#">Cleaner Methods of Operating Industries</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="#" class="h">Video Presentation</a></li>
           </ul>
         </div>
       </div>
@@ -113,16 +458,16 @@
             <ul type="disc">
             <li>to maintain its low air pollution level,</li>
             <li>reduce the temperature of the city and </li>
-  			<li>practice reforestation and afforestation whenever necessary.</li>
-  			</ul>
+        <li>practice reforestation and afforestation whenever necessary.</li>
+        </ul>
 
-  			<p>This city is for people who have always wanted to become one with nature and haven’t been able to because of the fact that where there is nature, there are no luxurious or essential facilities and vice versa. But The Prasinada is the perfect combination of nature and all the luxury you could ever think of. Preserving the resources of nature and maintaining greenery is the biggest priority in the city along with maintaining the happiness of the people.</p>
+        <p>This city is for people who have always wanted to become one with nature and haven’t been able to because of the fact that where there is nature, there are no luxurious or essential facilities and vice versa. But The Prasinada is the perfect combination of nature and all the luxury you could ever think of. Preserving the resources of nature and maintaining greenery is the biggest priority in the city along with maintaining the happiness of the people.</p>
 
-			<p>The city has almost zero carbon emission due to the fact that everything here is used and built keeping in mind that nature can not be harmed in any way whatsoever.</p>
+      <p>The city has almost zero carbon emission due to the fact that everything here is used and built keeping in mind that nature can not be harmed in any way whatsoever.</p>
 
-			<p>The city is built in such a way that it is directly connected to the main highways of the country while connecting to other neighbouring cities through other domestic roads.</p>
+      <p>The city is built in such a way that it is directly connected to the main highways of the country while connecting to other neighbouring cities through other domestic roads.</p>
 
-			<p>A city cannot be made green until the neighbouring cities are green too, therefore The Prasinada helps other cities too to attain zero-carbon emission so that everyone can enjoy nature’s beauty while living in the most luxurious way possible. Read more to learn about the city’s working.</p>
+      <p>A city cannot be made green until the neighbouring cities are green too, therefore The Prasinada helps other cities too to attain zero-carbon emission so that everyone can enjoy nature’s beauty while living in the most luxurious way possible. Read more to learn about the city’s working.</p>
             </div>
           </td>
 
@@ -182,14 +527,14 @@
               <p>Citizens of Prasinada know that it's not just the government’s duty to make their city sustainable. And they should also endeavour to make it a sustainable city. Prasinada citizens follow the following steps in their day to day life :</p>
 
               <p>
-              	<ol>
-              	<li>They follow the three bins system-</li>
-              		<img src="images/22.jpg" style="height: 250px; width: auto;">
-              	<li>They use the garden organic waste to create compost.</li>
-              	<li>They have replaced their high voltage consuming bulbs with the latest LEDs.</li>
-              	<li>'Go Digital' has been their vow toward sustainability. Most of the work is done digitally rather than using paper.</li>
-              	<li>They consume organic food only encouraging farmers to use biofertilizers and other eco-friendly farming methods rather than chemical fertilizers, pesticides, and more.</li>
-              	<li>They do rainwater harvesting at home.</li>
+                <ol>
+                <li>They follow the three bins system-</li>
+                  <img src="images/22.jpg" style="height: 250px; width: auto;">
+                <li>They use the garden organic waste to create compost.</li>
+                <li>They have replaced their high voltage consuming bulbs with the latest LEDs.</li>
+                <li>'Go Digital' has been their vow toward sustainability. Most of the work is done digitally rather than using paper.</li>
+                <li>They consume organic food only encouraging farmers to use biofertilizers and other eco-friendly farming methods rather than chemical fertilizers, pesticides, and more.</li>
+                <li>They do rainwater harvesting at home.</li>
                 </ol>
               </p>
 
@@ -221,13 +566,13 @@
               <p>Prasinada holds periodic elections once every 3 years to elect one main mayor and ministers for other important tasks in the city. </p>
 
               <p>
-              	<ul>
-              	<li>Type of government:- democratic</li>
-   				<li>Eligibility for voting:- people with no criminal records and above 18 years of age.</li>
-				<li>Eligibility for election candidates:- no criminal record, above 25 years of age.</li>
-				<li>Ministers: Finance, Health, Education, Energy, Sports, Human Resource Industry and Culture.</li>
-			  	</ul>
-			  </p>
+                <ul>
+                <li>Type of government:- democratic</li>
+          <li>Eligibility for voting:- people with no criminal records and above 18 years of age.</li>
+        <li>Eligibility for election candidates:- no criminal record, above 25 years of age.</li>
+        <li>Ministers: Finance, Health, Education, Energy, Sports, Human Resource Industry and Culture.</li>
+          </ul>
+        </p>
 
               <p>If the people of the city feel like any minister or the mayor himself is not doing his job accurately, they can file a complaint at the main HR office of the city which in turn will take the required actions.</p>
 
@@ -394,7 +739,7 @@
         </tr>
       </table>
     </div>
-	<div id="s4" class="bgwhite">
+  <div id="s4" class="bgwhite">
       <br><br><br>
       <table>
         <tr>
@@ -426,51 +771,44 @@
     </div>
     <div id="end">
       <br><br>
-      <h1>OUR TEAM ~~ TEAM AUA</h1><br>
+      <h1>&nbsp;&nbsp;OUR TEAM</h1><br>
       <table>
-        <tr>
-          <div class="montserrat">
-            <td>
-			  <h3>Abhyudit Singh</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Utkarsh Srivastav</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Arnav Khandelwal</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Muskan</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Navya</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Ishit</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-          </div>
+        <tr width="100%">
+            <div class="montserrat">
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Abhyudit Singh
+              </td>
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Utkarsh Srivastav
+              </td>
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Arnav Khandelwal
+              </td>
+            </div>
+        </tr>
+        <tr>&nbsp;</tr>
+        <tr width="100%">
+            <div class="montserrat">
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Muskan Singroha
+              </td>
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Ishit Kumar
+              </td>
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Navya Verma
+              </td>
+            </div>
         </tr>
       </table>
     </div>
-
-
-    <!-- the intro -->
-    <div class="intro-parent" >
-      <div style="margin-top: 200px; margin-left: 0px;"><div class="aua" id="aua"></div></div>
-    </div>
-
   </body>
 
 </html>
+
