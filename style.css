@@ -38,18 +38,16 @@ body {
   float: center;
 }
 
-.caret:hover{border: black;}
-
 .h {
   text-decoration: none;
   color: white;
   transition: 0.5s;
   padding: 10px;
-  margin: 3px;
+  margin: 0px;
   transition: 0.5s;
   font-family: 'Montserrat', montserrat;
   display: inline-block;
-  border-radius: 25px;
+  border-radius: 30px;
   font-size: 20px;
 }
 
@@ -67,7 +65,10 @@ body {
   background-color: #f9f9f9;
   min-width: 160px;
   z-index:1;
-  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .internal-working a {
@@ -81,6 +82,7 @@ body {
 
 .dropdown-internal:hover .internal-working {
   display: block;
+  transition: 0.8s;
 }
 
 .dropdown-internal:hover .intcaret{
@@ -102,6 +104,10 @@ body {
   cursor: pointer;
   transition: 0.5s;
   cursor: pointer;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .dropdown-external {
@@ -118,7 +124,10 @@ body {
   background-color: #f9f9f9;
   min-width: 160px;
   z-index:1;
-  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .external-working a {
@@ -141,6 +150,10 @@ body {
   cursor: pointer;
   transition: 0.8s;
   cursor: pointer;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 @media screen and (min-width: 768px) {
   .hide{
@@ -384,4 +397,3 @@ button {
 .montserrat {
   font-family: montserrat;
 }
-
