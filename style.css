@@ -21,7 +21,7 @@
   z-index: 2147483647;
   position: fixed;
   top: 0px;
-  animation:parent 0s linear 10s 1;
+  animation:parent 0s linear 0s 1;
   animation-fill-mode: forwards;
   animation-play-state: var(--playstate);;
 }
