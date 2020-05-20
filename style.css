@@ -368,11 +368,13 @@ button {
   border-color: red;
   padding: 5px;
   border-radius: 50%;
+  cursor: pointer;
 }
 #end img:hover{
   width: 60%;
   height: 60%;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 #end p {
