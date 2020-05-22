@@ -25,16 +25,18 @@
   .w40{
     display: none;
   }
-  .w60{
-    width: 100%;
-  }
-  
-  .bgwhite img{
+  .w40 img{
     display: none;
   }
 
-  .bgblack img{
-    display: none;
+  .w60{
+    width: 100%;
+  }
+  .w60 img{
+    display: block;
+  }
+  .dis{
+    display: block;
   }
 }
 .prasinada-gradient{
@@ -499,3 +501,6 @@ button {
   width: 40%;
 }
 
+.dis{
+  display: none;
+}
