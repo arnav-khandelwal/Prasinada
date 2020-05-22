@@ -21,7 +21,22 @@
   z-index: 2147483646;
   left: 0vw;
 }
+@media screen and ( max-width:900px ){
+  .w40{
+    display: none;
+  }
+  .w60{
+    width: 100%;
+  }
+  
+  .bgwhite img{
+    display: none;
+  }
 
+  .bgblack img{
+    display: none;
+  }
+}
 .prasinada-gradient{
   position: relative;
   top: 10vw;
@@ -475,3 +490,12 @@ button {
 .montserrat {
   font-family: montserrat;
 }
+
+.w60{
+  width: 60%;
+}
+
+.w40{
+  width: 40%;
+}
+
