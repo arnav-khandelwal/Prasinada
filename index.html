@@ -9,11 +9,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+      var intro = document.getElementsByClassName('new-intro');
+      function slide(){
+        setTimeout(function(){ location.replace("main.html") }, 600);
+      }
+    </script>
+
 </head>
 <body>
 <!-- New Intro-->
 <div class="new-intro" id="new-intro">
-<a href="main.html">
+<a onclick="slide()" href="#new-intro">
 <div class="bottom-right" id="arrow">
 <svg class="bi bi-arrow-right-short" width="70px" height="70px" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
@@ -24,6 +32,18 @@
   <h1><div class="prasinada-gradient">PRASINADA</div></h1>
   <h4 class="impossible">They Said It Was Impossible</h4>
 </div>
+
+<div id="main">
+      <br><br><br><br>
+      <p>
+        <center>
+          <h4>They said it was impossible</h4>
+        </center>
+        <center>
+          <h1>PRASINADA</h1>
+        </center>
+      </p>
+    </div>
 
 </body>
 </html>

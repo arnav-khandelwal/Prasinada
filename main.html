@@ -11,15 +11,39 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>PRASINADA - Group-29</title>
       </head>
+
+      <script>
+        function expand() {
+          var menu = document.getElementById("mobile-menu");
+            if (menu.style.display == "none") {
+              menu.style.animation = "open 0.1s linear 0s 1";
+              menu.style.display = "block";
+              menu.style.height = "92vh";
+            } else {
+              menu.style.display = "none";
+              menu.style.animation = "close 0.1s linear 0s 1";
+              menu.style.display = "none";
+              menu.style.height = "0px";
+            }
+        }
+        function hide() {
+          var menu = document.getElementById("mobile-menu");
+              menu.style.display = "none";
+              menu.style.animation = "close 0.1s linear 0s 1";
+              menu.style.display = "none";
+              menu.style.height = "0px";
+        }
+      </script>
+
   <body id="index">
 
     <a class="b" href="https://participativelearning.org/course/view.php?id=17" target="_blank">GRUEN</a>
-
-    <nav class="navbar navbar-fixed-top navbar-expand-lg" id="under-intro">
+    <div class="container-fluid" width="100vw">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg" id="under-intro" width="100vw">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="h hide">PRASINADA</a>
-          <button type="button" class="navbar-toggle navbar-right top inline">
+          <a href="#" class="hidden-md-up h inline navbar-right top" onclick="hide()">HOME</a>
+          <button type="button" class="navbar-toggle navbar-right top" onclick="expand()">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -27,7 +51,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#index" class="h navbar-brand">PRASINADA</a></li>
+            <li><a href="#index" class="h navbar-brand">HOME</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-left">
             <li>
@@ -57,12 +81,35 @@
             </div>
             </li>
             <li><a href="#" class="h">Video Presentation</a></li>
-            <li><a href="#ourteam" class="h">Our Team</a></li>
+            <!--<li><a href="#ourteam" class="h">Our Team</a></li>-->
           </ul>
         </div>
-      </div>
+        <div class="mobile-menu" id="mobile-menu" onclick="hide()">
+          <a href="#internal-working" class="mobile-h">Internal Working</a>
+          <div class="mobile-working">
+            <a href="#s1">Education</a>
+            <a href="#s2">Community Behaviour Changes</a>
+            <a href="#s3">Governance</a>
+            <a href="#s4">Maintenance of Greenery</a>
+            <a href="#s5">Low Air Pollution Levels</a>
+            <a href="#s6">Compensatory Act for Forests</a>
+          </div>
+          <a href="#external-working" class="mobile-h">External Working</a>
+          <div class="mobile-working">
+            <a href="#s7">Water System</a>
+            <a href="#s8">Transportation</a>
+            <a href="#s9">Reducing the Temperature of the City</a>
+            <a href="#s10">Energy Generation</a>
+            <a href="#s11">Waste management</a>
+            <a href="#s12">Cleaner Methods of Operating Industries</a>
+          </div>
+          <a href="#" class="mobile-h">Video Presentation</a>
+          <a href="#ourteam" class="mobile-h">Our Team</a><p></p>
+        </div>
     </nav>
+  </div>
 
+  <div onclick="hide()">
     <div id="main">
       <br><br><br><br>
       <p>
@@ -73,7 +120,6 @@
           <h1>PRASINADA</h1>
         </center>
       </p>
-
     </div>
     <div id="s0" class="bgblack">
       <br><br><br><br>
@@ -91,13 +137,13 @@
         <li>practice reforestation and afforestation whenever necessary.</li>
         </ul>
 
-        <p>This city is for people who have always wanted to become one with nature and haven’t been able to because of the fact that where there is nature, there are no luxurious or essential facilities and vice versa. But The Prasinada is the perfect combination of nature and all the luxury you could ever think of. Preserving the resources of nature and maintaining greenery is the biggest priority in the city along with maintaining the happiness of the people.</p>
+        <p>This city is for people who have always wanted to become one with nature and haven’t been able to because of the fact that where there is nature, there are no luxurious or essential facilities and vice versa. But Prasinada is the perfect combination of nature and all the luxury you could ever think of. Preserving the resources of nature and maintaining greenery is the biggest priority in the city along with maintaining the happiness of the people.</p>
 
       <p>The city has almost zero carbon emission due to the fact that everything here is used and built keeping in mind that nature can not be harmed in any way whatsoever.</p>
 
       <p>The city is built in such a way that it is directly connected to the main highways of the country while connecting to other neighbouring cities through other domestic roads.</p>
 
-      <p>A city cannot be made green until the neighbouring cities are green too, therefore The Prasinada helps other cities too to attain zero-carbon emission so that everyone can enjoy nature’s beauty while living in the most luxurious way possible. Read more to learn about the city’s working.</p>
+      <p>A city cannot be made green until the neighbouring cities are green too, therefore Prasinada helps other cities too to attain zero-carbon emission so that everyone can enjoy nature’s beauty while living in the most luxurious way possible. Read more to learn about the city’s working.</p>
             </div><br><br>
           </td>
 
@@ -381,7 +427,7 @@
           <td class="w60">
             <h1>TRANSPORTATION</h1><br>
             <div class="montserrat">
-              <p>Prasinada is well connected to the outer world as well as maintains its own sacredism at the same time. This is due to the fact that The Prasinada has a system of two circles namely the inner circle and the outer circle. Due to this, the city can be easily sealed if needed since unlike many cities, it has only seven entrances. This can especially be helpful during the time of an epidemic when communication with the rest of the world has to be terminated.</p>
+              <p>Prasinada is well connected to the outer world as well as maintains its own sacredism at the same time. This is due to the fact that Prasinada has a system of two circles namely the inner circle and the outer circle. Due to this, the city can be easily sealed if needed since unlike many cities, it has only seven entrances. This can especially be helpful during the time of an epidemic when communication with the rest of the world has to be terminated.</p>
               <ol>
                 <li>
                   <p><h2>Proper Public Transport</h2>
@@ -619,5 +665,6 @@
         </tr>
       </table><br><br><br></center>
     </div>
+  </div>
   </body>
 </html>
