@@ -37,6 +37,11 @@
   }
   .dis{
     display: block;
+    width: auto;
+  }
+  .w60 h1{
+    display: inline-block;
+    text-align: center;
   }
 }
 .prasinada-gradient{
